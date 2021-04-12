@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Content provider"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickAddName"
+        android:text="Add Name" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Name"
+        android:textColorHint="@android:color/holo_blue_light" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Grade"
+        android:textColorHint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-27dp"
+        android:layout_marginLeft="-27dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="onClickRetrieveStudents"
+        android:text="Retrieve student" />
+</RelativeLayout>

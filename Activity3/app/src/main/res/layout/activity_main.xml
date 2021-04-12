@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogcat" />
+
+    <Button
+        android:id="@+id/button_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Zoom"
+        android:onClick="zoom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_clockwise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_clockwise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Clockwise"
+        android:onClick="clockwise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_zoom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Fade"
+        android:onClick="fade"
+        app:layout_constraintStart_toStartOf="@+id/button_zoom"
+        app:layout_constraintTop_toBottomOf="@+id/button_zoom" />
+
+    <Button
+        android:id="@+id/button_blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Blink"
+        android:onClick="blink"
+        app:layout_constraintStart_toStartOf="@+id/button_clockwise"
+        app:layout_constraintTop_toBottomOf="@+id/button_clockwise" />
+
+    <Button
+        android:id="@+id/button_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Move"
+        android:onClick="move"
+        app:layout_constraintStart_toStartOf="@+id/button_fade"
+        app:layout_constraintTop_toBottomOf="@+id/button_fade" />
+
+    <Button
+        android:id="@+id/button_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/hot_pink"
+        android:text="Slide"
+        android:onClick="slide"
+        app:layout_constraintStart_toStartOf="@+id/button_blink"
+        app:layout_constraintTop_toBottomOf="@+id/button_blink" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

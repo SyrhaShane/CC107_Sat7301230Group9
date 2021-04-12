@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group9.adoptme">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ADOPTME">
+        <activity android:name=".ADMShare"></activity>
+        <activity android:name=".ADMUpdate" />
+        <activity android:name=".ADMTimeline" />
+        <activity android:name=".ADMProfileUpdate" />
+        <activity android:name=".ADMProfile" />
+        <activity android:name=".ADMFavorite" />
+        <activity android:name=".ADMAbout" />
+        <activity android:name=".AdMDashboard" />
+        <activity android:name=".AdMRegister" />
+        <activity android:name=".AdMLogin" />
+        <activity android:name=".ADMSplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
